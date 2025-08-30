@@ -1,0 +1,15 @@
+baseURL = 'https://hydro-web.com/'
+languageCode = 'es-es'
+title = 'Hydro Web - Consultora de Ingeniería Civil'
+theme = 'hydro-theme'
+
+[params]
+  description = "Consultora especializada en agua potable, redes de distribución, impulsión y plantas potabilizadoras"
+  companyName = "Hydro Web"
+  email = "info@hydro-web.com"
+  phone = "+54 11 1234-5678"
+  address = "Buenos Aires, Argentina"
+  
+[params.social]
+  linkedin = "https://linkedin.com/company/hydro-web"
+  twitter = "https://twitter.com/hydroweb"

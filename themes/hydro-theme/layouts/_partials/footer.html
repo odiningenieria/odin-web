@@ -1,0 +1,36 @@
+<footer>
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>Hydro Web</h3>
+      <p>Consultora especializada en ingeniería civil para sistemas de agua potable, redes de distribución y plantas potabilizadoras.</p>
+    </div>
+    
+    <div class="footer-section">
+      <h3>Servicios</h3>
+      <p><a href="/servicios/agua-potable">Agua Potable</a></p>
+      <p><a href="/servicios/redes-distribucion">Redes de Distribución</a></p>
+      <p><a href="/servicios/impulsion">Sistemas de Impulsión</a></p>
+      <p><a href="/servicios/plantas-potabilizadoras">Plantas Potabilizadoras</a></p>
+    </div>
+    
+    <div class="footer-section">
+      <h3>Contacto</h3>
+      <p>{{ site.Params.email }}</p>
+      <p>{{ site.Params.phone }}</p>
+      <p>{{ site.Params.address }}</p>
+      
+      <div class="social-links">
+        {{ with site.Params.social.linkedin }}
+          <a href="{{ . }}" aria-label="LinkedIn">🔗</a>
+        {{ end }}
+        {{ with site.Params.social.twitter }}
+          <a href="{{ . }}" aria-label="Twitter">🐦</a>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+  
+  <div class="text-center" style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.1);">
+    <p>&copy; {{ now.Year }} Hydro Web. Todos los derechos reservados.</p>
+  </div>
+</footer>

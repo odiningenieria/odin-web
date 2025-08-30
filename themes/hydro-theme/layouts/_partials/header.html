@@ -1,0 +1,41 @@
+<header>
+  <div class="header-container">
+    <a href="/" class="logo">
+      {{ if site.Params.logo }}
+        <img src="{{ site.Params.logo }}" alt="{{ site.Title }}" height="40">
+      {{ else }}
+        {{ site.Title }}
+      {{ end }}
+    </a>
+    
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="/">Inicio</a></li>
+        <li><a href="/servicios">Servicios</a></li>
+        <li><a href="/proyectos">Proyectos</a></li>
+        <li><a href="/nosotros">Nosotros</a></li>
+        <li><a href="/contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navMenu = document.querySelector('.nav-menu');
+  
+  menuToggle.addEventListener('click', function() {
+    navMenu.classList.toggle('active');
+  });
+  
+  // Close menu when clicking outside
+  document.addEventListener('click', function(event) {
+    if (!event.target.closest('nav') && !event.target.closest('.menu-toggle')) {
+      navMenu.classList.remove('active');
+    }
+  });
+});
+</script>

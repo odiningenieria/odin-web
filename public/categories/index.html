@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es-es" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Categories | Hydro Web - Consultora de Ingeniería Civil</title>
+
+    <link rel="stylesheet" href="/css/main.css">
+
+
+      <script src="/js/main.js"></script>
+
+
+</head>
+<body>
+  <header>
+    <header>
+  <div class="header-container">
+    <a href="/" class="logo">
+      
+        Hydro Web - Consultora de Ingeniería Civil
+      
+    </a>
+    
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="/">Inicio</a></li>
+        <li><a href="/servicios">Servicios</a></li>
+        <li><a href="/proyectos">Proyectos</a></li>
+        <li><a href="/nosotros">Nosotros</a></li>
+        <li><a href="/contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navMenu = document.querySelector('.nav-menu');
+  
+  menuToggle.addEventListener('click', function() {
+    navMenu.classList.toggle('active');
+  });
+  
+  
+  document.addEventListener('click', function(event) {
+    if (!event.target.closest('nav') && !event.target.closest('.menu-toggle')) {
+      navMenu.classList.remove('active');
+    }
+  });
+});
+</script>
+
+  </header>
+  <main>
+    
+  <h1>Categories</h1>
+  
+  
+
+  </main>
+  <footer>
+    <footer>
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>Hydro Web</h3>
+      <p>Consultora especializada en ingeniería civil para sistemas de agua potable, redes de distribución y plantas potabilizadoras.</p>
+    </div>
+    
+    <div class="footer-section">
+      <h3>Servicios</h3>
+      <p><a href="/servicios/agua-potable">Agua Potable</a></p>
+      <p><a href="/servicios/redes-distribucion">Redes de Distribución</a></p>
+      <p><a href="/servicios/impulsion">Sistemas de Impulsión</a></p>
+      <p><a href="/servicios/plantas-potabilizadoras">Plantas Potabilizadoras</a></p>
+    </div>
+    
+    <div class="footer-section">
+      <h3>Contacto</h3>
+      <p>info@hydro-web.com</p>
+      <p>&#43;54 11 1234-5678</p>
+      <p>Buenos Aires, Argentina</p>
+      
+      <div class="social-links">
+        
+          <a href="https://linkedin.com/company/hydro-web" aria-label="LinkedIn">🔗</a>
+        
+        
+          <a href="https://twitter.com/hydroweb" aria-label="Twitter">🐦</a>
+        
+      </div>
+    </div>
+  </div>
+  
+  <div class="text-center" style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.1);">
+    <p>&copy; 2025 Hydro Web. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+  </footer>
+</body>
+</html>
